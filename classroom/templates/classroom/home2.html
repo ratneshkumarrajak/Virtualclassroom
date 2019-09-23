@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome to the Virtual Classroom! <span class="icon-emo-happy"></span></h2>
+<hr>
+<h4><u>WHAT WE HAVE</u></h4>
+<div>
+ <a  href ="{% url 'upload' %}" class="btn btn-primary" role="button">STUDY MATERIAL</a>
+    Find lectures and notes of various courses at one place.</div><br>
+<div >
+  <p>
+    
+    <a href="{% url 'homequiz' %}" class="btn btn-primary" role="button">QUIZ</a>
+      Test your knowledge, especially as a competition between individuals or teams as a form of entertainment.
+    </p></div>
+<div>
+<a href="{% url 'discussion' %}" class="btn btn-primary" role="button">DISCUSSION</a>
+    In these friendly discussion spots, members are able to view posts, post new queries or respond to existing queries posted by other members.
+ </div>
+
+{% endblock %}
